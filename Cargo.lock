@@ -1186,23 +1186,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ethereum"
-version = "0.7.2"
-source = "git+https://github.com/webb-tools/ethereum#d5eacd91d4fbaae304c6b70e8d6541f60b07d6c0"
-dependencies = [
- "ethereum-types",
- "funty",
- "hash-db",
- "hash256-std-hasher",
- "parity-scale-codec",
- "rlp",
- "rlp-derive",
- "serde",
- "sha3 0.9.1",
- "triehash",
-]
-
-[[package]]
 name = "ethereum-types"
 version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1229,7 +1212,7 @@ version = "0.24.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0467250a12bb144ad7b2f41e03e8675e38b971ab73f6d42ede6b78af07657e7b"
 dependencies = [
- "ethereum 0.7.1",
+ "ethereum",
  "evm-core",
  "evm-gasometer",
  "evm-runtime",
@@ -1361,7 +1344,7 @@ dependencies = [
 name = "fc-rpc"
 version = "0.1.0"
 dependencies = [
- "ethereum 0.7.2",
+ "ethereum",
  "ethereum-types",
  "fc-consensus",
  "fc-db",
@@ -1490,7 +1473,7 @@ dependencies = [
 name = "fp-consensus"
 version = "0.1.0"
 dependencies = [
- "ethereum 0.7.2",
+ "ethereum",
  "parity-scale-codec",
  "rlp",
  "sha3 0.8.2",
@@ -1515,7 +1498,7 @@ dependencies = [
 name = "fp-rpc"
 version = "0.1.0"
 dependencies = [
- "ethereum 0.7.2",
+ "ethereum",
  "ethereum-types",
  "fp-evm",
  "parity-scale-codec",
@@ -3873,7 +3856,7 @@ dependencies = [
 name = "pallet-ethereum"
 version = "0.1.0"
 dependencies = [
- "ethereum 0.7.2",
+ "ethereum",
  "ethereum-types",
  "evm",
  "fp-consensus",
